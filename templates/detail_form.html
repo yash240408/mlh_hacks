@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Portfolio Details</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+    <link href='' rel='stylesheet'>
+    <style>
+        @media (min-width: 1025px) {
+            .h-custom {
+                height: 100vh !important;
+            }
+        }
+
+        .card-registration .select-input.form-control[readonly]:not([disabled]) {
+            font-size: 1rem;
+            line-height: 2.15;
+            padding-left: .75em;
+            padding-right: .75em;
+        }
+
+        .card-registration .select-arrow {
+            top: 13px;
+        }
+
+        .gradient-custom-2 {
+            /* fallback for old browsers */
+            background: #a1c4fd;
+
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+        }
+
+        .bg-indigo {
+            background-color: #4835d4;
+        }
+
+        @media (min-width: 992px) {
+            .card-registration-2 .bg-indigo {
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .card-registration-2 .bg-indigo {
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="h-100 h-custom gradient-custom-2">
+        <form method="post" action="/">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12">
+                        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                            <div class="card-body p-0">
+                                <div class="row g-0">
+                                    <div class="col-lg-6">
+                                        <div class="p-5">
+                                            <h3 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h3>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Examplev1"
+                                                            class="form-control form-control-lg" name="fname"
+                                                            placeholder="John" required />
+                                                        <label class="form-label" for="form3Examplev1">First
+                                                            name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Examplev2"
+                                                            class="form-control form-control-lg" name="lname"
+                                                            placeholder="Joe" required/>
+                                                        <label class="form-label" for="form3Examplev2">Last name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Examplev3"
+                                                            class="form-control form-control-lg" name="email"
+                                                            placeholder="john.doe@gmail.com" required/>
+                                                        <label class="form-label" for="form3Examplev3">E-Mail</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="tel" id="form3Examplev4"
+                                                            class="form-control form-control-lg" name="phone"
+                                                            placeholder="1234567890" required/>
+                                                        <label class="form-label" for="form3Examplev4">Phone No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Examplev5"
+                                                            class="form-control form-control-lg" name="domain"
+                                                            placeholder="Web, Devops, App, etc" required/>
+                                                        <label class="form-label" for="form3Examplev5">Domain</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="tel" id="form3Examplev6"
+                                                            class="form-control form-control-lg" name="occupation"
+                                                            placeholder="Student / Full Stack Developer " required/>
+                                                        <label class="form-label"
+                                                            for="form3Examplev6">Occupation</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-6 pb-8 mb-md-4 pb-md-4">
+                                                    <div class="form-outline">
+                                                        <textarea name="selfdesc" class="form-control form-control-lg"
+                                                            id="form3Examplev7" minlength="1" maxlength="700"
+                                                            placeholder="Character Limit 700" required></textarea>
+                                                        <label class="form-label" for="form3Examplev7">
+                                                            About Self</label>
+                                                    </div>
+                                                    <div class="form-outline">
+                                                        <textarea name="expdesc" class="form-control form-control-lg"
+                                                            id="form3Examplev7" minlength="1" maxlength="700"
+                                                            placeholder="Character Limit 700" required></textarea>
+                                                        <label class="form-label" for="form3Examplev7">
+                                                            Experience Details</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-2 pb-2 mb-md-4 pb-md-4">
+
+                                                    <div class="form-outline" >
+                                                        <fieldset >
+                                                            <legend>Choose your technical skills:</legend>
+                                                            <div>
+                                                                <input type="checkbox" required value="Python" id="python" name="skill">
+                                                                <label for="python">Python</label>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                                                                <input type="checkbox"  value="Java" id="java" name="skill">
+                                                                <label for="java">Java</label>
+                                                            </div>
+                                                            <div>
+                                                                <input type="checkbox"  value="JavaScript" id="js" name="skill">
+                                                                <label for="js">JavaScript</label>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="checkbox"  id="cpp" value="C++" name="skill">
+                                                                <label for="cpp">C++</label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-6 pb-8 mb-md-4 pb-md-4">
+                                                    <div class="form-outline">
+                                                        <textarea name="skilldesc" class="form-control form-control-lg"
+                                                            id="form3Examplev7" minlength="1" maxlength="700"
+                                                            placeholder="Character Limit 700" required></textarea>
+                                                        <label class="form-label" for="form3Examplev7">
+                                                            Experience Details</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="tel" id="form3Examplev8"
+                                                            class="form-control form-control-lg" name="github"
+                                                            placeholder="https://github.com/username" required/>
+                                                        <label class="form-label" for="form3Examplev8">Github</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="tel" id="form3Examplev8"
+                                                            class="form-control form-control-lg" name="linkedin"
+                                                            placeholder="https://linedin.com/in/username" required/>
+                                                        <label class="form-label" for="form3Examplev8">Linkedin</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="tel" id="form3Examplev8"
+                                                            class="form-control form-control-lg" name="twitter"
+                                                            placeholder="https://twitter.com/username" />
+                                                        <label class="form-label" for="form3Examplev8">Twitter</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4 pb-2">
+                                                    <div class="form-outline">
+                                                        <input type="tel" id="form3Examplev8"
+                                                            class="form-control form-control-lg" name="blog"
+                                                            placeholder="https://hashnode.com/username" />
+                                                        <label class="form-label" for="form3Examplev8">Blog</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-2 pb-2 mb-md-4 pb-md-4">
+                                                    <div class="form-outline">
+                                                        <br>
+                                                        <input type="radio" id="portfolio1" name="portfolio" required value="1" />                                                        
+                                                        <label for="portfolio1">Portfolio 1</label>
+                                                        <br>
+                                                        <input type="radio" id="portfolio2" name="portfolio" required value="2" />
+                                                        <label for="portfolio2">Portfolio 2</label>
+                                                         <br />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 bg-indigo text-white">
+                                        <div class="p-5">
+                                            <h3 class="fw-normal mb-5">Education and Experience Details</h3>
+                                            <hr>
+                                            <h5 class="fw-normal mb-5 center">Bachelor Degree</h5>
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    <input type="text" id="form3Examplea9"
+                                                        class="form-control form-control-lg" name="degree"
+                                                        placeholder="XYZ University, 9.9, Information Technology, BE/Btech" required/>
+                                                    <label class="form-label" for="form3Examplea9">University Name,
+                                                        CGPA, Field, Degree</label>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    Admission Year : <input class="form-control form-control-lg"
+                                                        placeholder="A Year" type="date" name="startdate" required
+                                                        id="form3Examplea11">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    Graduate Year : <input type="date" id="form3Examplea3"
+                                                        name="enddate" class="form-control form-control-lg" />
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h5 class="fw-normal mb-5 center">Experience Detail</h5>
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    <input type="text" id="form3Examplea9"
+                                                        class="form-control form-control-lg" name="company"
+                                                        placeholder="Google, 2, Cloud engineer" required/>
+                                                    <label class="form-label" for="form3Examplea9">Company Name,
+                                                        Experience Year, Field</label>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    Joining Year : <input class="form-control form-control-lg"
+                                                        placeholder="A Year" type="date" name="startyear" required
+                                                        id="form3Examplea11">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    Leaving Year : <input type="date" id="form3Examplea3" name="endyear"
+                                                        class="form-control form-control-lg" />
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <button type="submit" class="btn btn-light btn-lg "
+                                                data-mdb-ripple-color="dark">Register</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
